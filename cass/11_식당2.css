@@ -1,0 +1,98 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 950px;                
+  background-image: url("https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/9b22e6f1444b5ae785f3a267/pexelsphoto3326103.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 6px 10px;
+}
+
+
+.hero-text {
+  position: absolute;
+  left: 60px;
+  bottom: 120px;
+}
+
+.white {
+  position: relative;
+  display: inline-block;
+  background: white;
+  padding: 18px 28px;
+  font-size: 32px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.yellow {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  background: #f5c400;
+  padding: 18px 28px;
+  font-size: 32px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+  margin-top: 160px;
+}
+
+
+.text-box {
+  width: 320px;
+  padding: 30px;
+  border: 3px solid black;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+
+
+.image-box {
+  position: relative;
+  width: 480px;
+  height: 640px;
+  transform: translateX(-350px);
+}
+
+
+.yellow-bg {
+  width: 600px;
+  height: 640px;
+  background: #f5c400;
+  position: absolute;
+  top: -1;
+  left: 100px;
+}
+
+
+.image-box img {
+  width: 380px;
+  height: 500px;
+  object-fit: cover;
+  position: absolute;
+  top: 70px;
+  left: 360px;
+}

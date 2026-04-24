@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <from>
+         text : <input type="text"><br>
+         text(기본 값) : <input><br>
+         text(value) : <input type="text" value="초기 값"
+         text(placeholder) :<input type="text" placeholder="플레이스 홀더"><br>
+         text(readonly) : <ipout type="text" value="초기값" readonly="readonly"><br>
+         text(disabled) :  <ipout type="text" value="초기값" disadled="disadled"><br>
+         password : <input type="password"><br>
+         <hr>
+         <textarea rows="10" cols="100">미리
+            보여줄 글
+         </textarea>
+         <br>
+         datalist 연습 <input type="text" list="c">
+         <datalist id="c">
+                   <option value="가나">
+                   <option value="스위스">
+                   <option value="브라질">
+         </datalist>
+         <br>
+         inpout : button : <inpout type="button" value="로그인"><br>
+         button : <button type="button">버튼태그</button>
+         <br>
+         submit : <input type="submit" value="전송">
+         submit(value없음) : <input type="submit"><br>
+         button : <button type="submit">버튼 submit</button><br>
+         <br>
+         reset : <input type="reaet" value="기본글씨는 초기화">
+         <br>
+         이미지를 버튼으로 감싼다<br>
+         <button type="button">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA1MThfNzQg%2FMDAxNzQ3NTU1NzI4MjMw.EiyFSR-rXJg59iln73sgXvtnWlCNid_tB5MHE0kzQR8g.F5zOETtVlq00jOUJrmp6sjlf8SPhI7OQJ7I1Kk38Q-kg.PNG%2Fimage.png&type=a340">
+         </button>
+         <hr>
+         checkbox
+         <input type="checkbox" value="1">샷추가
+         <input type="checkbox" value="2" checked="checked">휘핑크림
+         <input type="checkbox" value="3">펄추가
+         <input type="checkbox" value="4">시럽
+         <br>
+         radio : 
+         <input type="radio" name="china" value="1">짜장면
+         <input type="radio" name="china" value="2">마파두부밥
+         <input type="radio" name="china" value="3">깐풍기
+         <br>
+         <input type="radio" name="gender" value="female">남자
+         <input type="radio" name="gender" value="male">여자
+         <br>
+         select : 
+         <select>
+            <option>한식</option>
+            <option>양식</option>
+            <option selected="selected">중식</option>
+            <option>분식</option>
+            <option>일식</option>
+         </select>
+         <br>
+          select - size : <select size></select>
+         <select>
+            <option>한식</option>
+            <option>양식</option>
+            <option selected="selected">중식</option>
+            <option>분식</option>
+            <option>일식</option>
+         </select>
+         <br>
+          select - multiple : <select multiple></select>
+         <select>
+            <option>한식</option>
+            <option>양식</option>
+            <option selected="selected">중식</option>
+            <option>분식</option>
+            <option>일식</option>
+         </select>
+         <br>
+         lbel 1 :
+         <lbel>
+            <input type="checkbox">펄추가
+         </lbel>
+         <br>
+         lbel 2 :
+         <lbel for="per1">펄추가</lbel>
+         <input type="checkbox" id="per1">
+         <br>
+         color : <input type="color">
+         <br>
+         date : <input type="date" value="2025-12-19">
+         time : <input type="time"><br>
+         number : <input type="number"><br>
+         range : <input
+                      type="range"
+                      min="10"
+                      max="100"
+                      step="30">
+         fieldest : 
+         <fieldset>
+            <legend>제목</legend>
+            내용
+         </fieldset>             
+</from>
+<hr>
+<hr>
+<!--
+    from 속성
+    method : get,post
+    method 기본값은 get
+    
+    action : 전송할 주소
+    action 기본값은 현재 내 주소
+    -->
+
+    <from method="get">
+        <input type="test" name="abcd"><br>
+        <input type="test" name="stacy"><br>
+        <input type="submit" value="get 연습">
+
+    </from>
+    <from method="get" action="https://search.naver.com/search.naver?">
+        <input type="text" name="query"><br>
+        <input type="submit" value="네이버 검색">
+    </from>
+
+
+    <from method="post">
+        <input type="test" name="abcd"><br>
+        <input type="test" name="stacy"><br>
+        <input type="submit" name="post 연습"><br>
+    </from>
+</body>
+</html>

@@ -1,0 +1,389 @@
+/* 전체 기본 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "맑은 고딕", sans-serif;
+}
+
+/* 배경 */
+body {
+  background-color: #f3f5f9;
+  padding: 20px;
+}
+
+/* 전체 박스 */
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 위 제목 박스 */
+.title-box {
+  background: #ffffff;
+  border: 1px solid #d7e0ea;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 전구 아이콘 */
+.title-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #2452d3;
+  color: #ffd84d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+/* 제목 글자 */
+.title-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2452d3;
+}
+
+/* 코스 버튼 줄 */
+.course-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+/* 코스 버튼 */
+.course-btn {
+  flex: 1;
+  min-width: 120px;
+  height: 44px;
+  border: 1px solid #c7d3e2;
+  background: #ffffff;
+  color: #1f3b63;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* 선택된 코스 */
+.course-btn.active {
+  background: #2452d3;
+  color: #ffffff;
+}
+
+/* 홀 목록 큰 박스 */
+.panel {
+  background: #ffffff;
+  border: 1px solid #d7e0ea;
+  border-radius: 16px;
+  padding: 14px;
+}
+
+/* 홀 목록 제목 */
+.panel-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* 홀 한 줄 */
+.hall-box {
+  border: 1px solid #d7e0ea;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+/* 홀 윗부분 */
+.hall-head {
+  min-height: 54px;
+  background: #f3f6fb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+/* 홀 이름 */
+.hall-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e3557;
+}
+
+/* 오른쪽 버튼 묶음 */
+.hall-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* on / off 버튼 */
+.toggle-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* 초록 버튼 */
+.on-btn {
+  background: #18a944;
+}
+
+/* 회색 버튼 */
+.off-btn {
+  background: #7083a1;
+}
+
+/* - + 버튼 */
+.pm-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 7px;
+  background: #31425f;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* 화살표 버튼 */
+.arrow-btn {
+  border: none;
+  background: transparent;
+  color: #5d7598;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+/* 홀 안쪽 */
+.hall-body {
+  padding: 18px 12px;
+  display: none;
+}
+
+/* 열렸을 때 */
+.hall-body.open {
+  display: block;
+}
+
+/* 홀 안 제목 */
+.hall-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* 카드 3칸 */
+.pool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+/* 카드 */
+.pool-card {
+  background: #eef3fa;
+  border: 1px solid #d3deeb;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* 카드 위 */
+.pool-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 14px 10px;
+}
+
+/* 풀 이름 */
+.pool-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* id 글자 */
+.pool-id {
+  font-size: 12px;
+  color: #415b82;
+  font-weight: 700;
+}
+
+/* 카드 안쪽 */
+.pool-content {
+  padding: 0 14px 16px;
+}
+
+/* 버튼 줄 */
+.pool-btn-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 8px;
+}
+
+/* 버튼 묶음 */
+.left-btns,
+.right-btns {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.range-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.range-box input[type="range"] {
+  flex: 1;
+}
+/* 밝기 값 줄 */
+.value-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* 입력칸 */
+.value-input {
+  width: 70px;
+  height: 30px;
+  border: 1px solid #c4cfdb;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+/* 색깔 추가 부분 */
+
+/* 배경 */
+body {
+  background-color: #f2fbf2;
+}
+
+/* 제목 아이콘 (초록 유지) */
+.title-icon {
+  background: #2e7d32;
+}
+
+/* 제목 글자 */
+.title-text {
+  color: #1b5e20;
+}
+
+/* 코스 버튼 */
+.course-btn {
+  border: 1px solid #a5d6a7;
+  color: #1b5e20;
+}
+
+/* 선택된 코스 (초록 강조) */
+.course-btn.active {
+  background: #2e7d32;
+  color: #ffffff;
+}
+
+/* 홀 박스 */
+.hall-box {
+  border: 1px solid #c8e6c9;
+  background: #f8fff8;
+}
+
+/* 홀 헤더 */
+.hall-head {
+  background: #e8f5e9;
+}
+
+/* 홀 이름 */
+.hall-name {
+  color: #1b5e20;
+}
+
+
+   /* 버튼 색 구분 */ 
+
+
+/* ON → 초록 */
+.on-btn {
+  background: #43a047;
+  color: #ffffff;
+}
+
+/* OFF → 검정 */
+.off-btn {
+  background: #2b2b2b;
+  color: #ffffff;
+}
+
+/* - + 버튼 → 검정 */
+.pm-btn {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+/* hover */
+.pm-btn:hover {
+  background: #000000;
+}
+
+/* 화살표 */
+.arrow-btn {
+  color: #1b5e20;
+}
+
+/* 카드 */
+.pool-card {
+  background: #f4fff4;
+  border: 1px solid #c5e1a5;
+}
+
+/* ID 글자 */
+.pool-id {
+  color: #4e7d4e;
+}
+
+/* 입력창 */
+.value-input {
+  border: 1px solid #a5d6a7;
+}
+
+/* 슬라이더 (초록 유지) */
+input[type="range"] {
+  accent-color: #2e7d32;
+}
+
+/* 화면 줄어들 때 */
+@media (max-width: 1000px) {
+  .pool-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .pool-grid {
+    grid-template-columns: 1fr;
+  }
+}

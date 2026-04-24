@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* div.item1 div img { 
+            position: absolute;
+            top: -60;
+            left: 180px;
+            display: none;
+        }
+        div.item1 > img:hover + div img {
+            display: inline;
+        } */
+         
+        .item {
+            width: 200px;
+        }
+        .item div {
+            position: absolute;
+            top: 0;
+            left: 180px;
+            display: none;
+        }
+        .item:hover div {
+            display: inline;
+        }
+
+        .item2 .big {
+            position: absolute;
+            top: 0;
+            left: 180px;
+            display: none;
+        }
+        .item2 .thumb:hover + .big {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="item2">
+            <img class="thumb" src="https://thumbnail.coupangcdn.com/thumbnails/remote/48x48ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+            <img class="big" src="https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+        </div>
+        
+   
+     <div class="item">
+            <img class="thumb" src="https://thumbnail.coupangcdn.com/thumbnails/remote/48x48ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">
+            <img class="big" src="https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/07/23/12/1/1b2a4f85-9a71-4737-8513-8f16d11d1ac8.png">       
+     </div>
+       
+</body>
+</html>

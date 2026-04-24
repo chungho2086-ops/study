@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX</title>
+</head>
+<body>
+
+<h2>AJAX </h2>
+
+<!-- 버튼 -->
+<input type="button" value="데이터 가져오기" onclick="loadData()">
+
+<!-- 결과 출력 -->
+<div id="result"></div>
+
+<script>
+
+function loadData() {
+
+    // 서버 요청
+    fetch("request")
+
+    // JSON으로 변환
+    .then(function(response){
+        return response.json();
+    })
+
+    // 결과 처리
+    .then(function(data){
+        document.getElementById("result").innerHTML =
+            "이름 : " + data.name + "<br>" +
+            "나이 : " + data.age;
+    });
+
+}
+
+</script>
+
+</body>
+</html>
