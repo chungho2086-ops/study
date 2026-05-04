@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kr.or.human4.dao.EmpDAO;
+import kr.or.human4.dao.mapper.EmpMapperDAO;
 import kr.or.human4.dto.EmpDTO;
 
 @Service
@@ -14,6 +15,9 @@ public class EmpServiceImpl implements EmpService {
 
 	@Autowired
 	EmpDAO empDAO;
+	
+	@Autowired
+	EmpMapperDAO empMapperDAO;
 
 	@Override
 	public List<EmpDTO> getEmpList() {
@@ -79,4 +83,11 @@ public class EmpServiceImpl implements EmpService {
 	public List<EmpDTO> choice(EmpDTO dto) {
 		return empDAO.choice(dto);
 	}
+
+	@Override
+	public List<EmpDTO> selectMapper() {
+		return empMapperDAO.selectEmp();
+	}
+	
+	
 }
